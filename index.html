@@ -447,7 +447,9 @@
                             break;
                     }
                 },
-                { enableHighAccuracy: true, maximumAge: 0, timeout: 10000 }
+                // KODE BARU (Diperbarui untuk toleransi dalam ruangan)
+                { enableHighAccuracy: false, maximumAge: 10000, timeout: 25000 }
+                //{ enableHighAccuracy: true, maximumAge: 0, timeout: 10000 }
             );
         }
 
